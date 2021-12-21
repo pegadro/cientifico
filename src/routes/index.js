@@ -23,4 +23,4 @@ const router = async () => {
 
 }
 
-export { router }
+export { router };
