@@ -1,9 +1,13 @@
+import { deployed } from '../utils/getAppStatus';
+
+const mainRoute = deployed ? "/cientifico" : "/";
+
 const Header = () => {
     const view = `
         <div class="Header-main">
             <div class="Header-logo">
                 <h1>
-                    <a href="/">
+                    <a href="${mainRoute}">
                         100tifi.co
                     </a>
                 </h1>
